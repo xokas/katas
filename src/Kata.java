@@ -163,13 +163,5 @@ public class Kata {
         return result;
     }
 
-    public static int[][] conwayLife(int[][] cells, int n) {
-        for(int i = 0; i < cells.length; i++){
-            for(int j = 0; j < cells[i].length; j++){
 
-            }
-        }
-
-        return cells;
-    }
 }

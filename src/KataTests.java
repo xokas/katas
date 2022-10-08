@@ -85,20 +85,6 @@ public class KataTests {
         assertEquals("Should return false", false, Kata.tenMinWalk(new char[] {'n','n','n','s','n','s','n','s','n','s'}));
     }
 
-    @Test
-    public void conwayLifeTest() {
-        int[][][] gliders = {
-                {{1,0,0},
-                        {0,1,1},
-                        {1,1,0}},
-                {{0,1,0},
-                        {0,0,1},
-                        {1,1,1}}
-        };
-        System.out.println("Glider");
-        LifeDebug.print(gliders[0]);
-        int[][] res = Kata.conwayLife(gliders[0], 1);
-        assertTrue("Got \n" + LifeDebug.htmlize(res) + "\ninstead of\n" + LifeDebug.htmlize(gliders[1]), LifeDebug.equals(res, gliders[1]));
-    }
+
 }
 

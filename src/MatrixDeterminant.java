@@ -9,8 +9,8 @@ public class MatrixDeterminant {
 
         for (int i = 0 ; i < size ; i++) {
             int[][] newMatrix = reduce(matrix, i);
-            d += (i % 2 != 0 ? -1 : 1) * matrix[0][i] * determinant(newMatrix);
-            //d += Math.pow(-1, i) * matrix[0][i] * determinant(newMatrix);
+            //d += (i % 2 != 0 ? -1 : 1) * matrix[0][i] * determinant(newMatrix);
+            d += Math.pow(-1, i) * matrix[0][i] * determinant(newMatrix);
         }
         return d;
     }
